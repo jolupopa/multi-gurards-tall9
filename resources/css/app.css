@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .recal>:not([hidden])~:not([hidden]) {
+      margin-top: calc(2rem*(1 - var(--tw-space-y-reverse)));
+      margin-bottom: calc(2rem*var(--tw-space-y-reverse));
+    }
+
+  }
